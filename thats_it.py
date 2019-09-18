@@ -1,8 +1,5 @@
 import os,sys,sysconfig,webbrowser,time,datetime
 greetings =""#insert greetings into it by time and other things
-#look out on youtube
-#HOW TO autorun scripts on starup
-#how to set anaconda as interpreter
 sent1 = "what you wanna do sir"
 for x in sent1:
     sys.stdout.write(x.upper())
