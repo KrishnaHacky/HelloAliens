@@ -1,10 +1,10 @@
 import os,sys,sysconfig,webbrowser,time,datetime as dt,random
 # updating this file in startup folder
-a = open(sys.argv[0])
-b = open("C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\etask2.py".format(os.getlogin()), "w")
-c= open("C:\\Users\\{}\\Desktop\\PyAi.py".format(os.getlogin()),"w")
-b.write(a.read())
-c.write(a.read())
+# a = open(sys.argv[0])
+# b = open("C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\etask2.py".format(os.getlogin()), "w")
+# c= open("C:\\Users\\{}\\Desktop\\PyAi.py".format(os.getlogin()),"w")
+# b.write(a.read())
+# c.write(a.read())
 def style(x,y):
     #where x is the sring and y is fastness to print
     sys.stdout.write("\r")
@@ -46,16 +46,7 @@ while True:
     if inp == "no" or inp =="na":
         break
 
-
-
-
-
-
-
-
-
-
-
+        
 sent3 = "my service is that only but it is in working"
 style(sent3+" "*(var2-len(sent3)),0.01)
 time.sleep(2)
