@@ -7,7 +7,7 @@
     # finally take another input(number) from the user to select the exact movie which he wants from above 
 
 2 - getting its description
-    # now we will provide rating (with rotten tomatos etc) from 2 websites imdb and
+    # now we will provide rating (with rotten tomatos etc) from 2 websites imdb and Metacritic
     # and its genre and storyline
     
 3 - display and ask the stuffs in a decorated way in CLI (user friendly)
