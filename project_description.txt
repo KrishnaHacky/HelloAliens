@@ -10,11 +10,11 @@
     # now we will provide rating (with rotten tomatos etc) from 2 websites imdb and
     # and its genre and storyline
     
-3 - display and asking the stuffs in a decorated way in CLI (user friendly)
+3 - display and ask the stuffs in a decorated way in CLI (user friendly)
 
-5 - give user the link of 2 ott platform to watch the movie (netflix , amazon etc)
+4 - give user the link of 2 ott platform to watch the movie (netflix , amazon etc)
 
-4 - ask user to watch its trailer 
+5 - ask user to watch its trailer 
     # format - wanna watch its trailer now - (yes or no)
     # if yes then open up a new tab in users browser and play the trailer on youtube
 
