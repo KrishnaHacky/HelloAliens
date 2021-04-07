@@ -24,6 +24,7 @@ def progress_bar(x):
 k=imdb.IMDb()
 
 def movie_detail():
+    time.sleep(0.5)
     movies = k.search_movie(str(m))                     #SEARCHING FOR ALL MOIVES RELATED TO THE NAME ENTERED
     index = movies[0].getID()                           #TAKING THE [0] INDEX MOVIE OUT OF THE LIST
     movie = k.get_movie(index)
@@ -42,6 +43,7 @@ def movie_detail():
     style(f"Cast : {cast_list}\n",0.01)
 
 def actor_detail():
+    time.sleep(0.5)
     star = k.search_person(str(p))                       ##SEARCHING FOR ALL PERSON RELATED TO THE NAME ENTERED
     index = star[0].getID()                              #TAKING THE [0] INDEX PERSON OUT OF THE LIST
     st = k.get_person(index)
@@ -60,6 +62,7 @@ def actor_detail():
     style(f'Movie apperences : {apper_list}\n',0.02)
 
 def top_list():
+    time.sleep(0.5)
     top = k.get_top250_movies()                          #STORING THE TOP 250 MOVIES
     top1 = k.get_top250_tv()                             #STORING THE TOP 250 TV SERIES
     bottom = k.get_bottom100_movies()                    #STORING THE BOTTOM 100 MOVIES
@@ -81,25 +84,26 @@ if c=='2':
     previous_length=style("Enter The MOVIE Name : ",0.03,previous_length)
     m=input()
     print()         #TAKING INPUT FOR MOIVE
+
     Thread(target=movie_detail).start()
     style("processing... please wait --->",0.03)
-    time.sleep(1)
+    time.sleep(0.3)
     progress_bar(0.05) 
 elif c=='1':
-    style("Whome You Are Searching For? : ",0.04)
+    style("Who Are You Searching For? : ",0.04)
     p=input()
-    print()                                              #TAKING INPUT FOR PERSON TO BE SEARCHED
+    print()                                             #TAKING INPUT FOR PERSON TO BE SEARCHED
     Thread(target=actor_detail).start()
     style("processing... please wait --->",0.03)
-    time.sleep(1)
+    time.sleep(0.3)
     progress_bar(0.05)
 
 
 elif c=='3':
     Thread(target=top_list).start()
     style("processing... please wait --->",0.03)
-    time.sleep(1)
+    time.sleep(0.3)
     progress_bar(0.06)
     print()
 else:
-    style("PLEASE DON'T WASTE MY TIME,CAN'T YOU READ THAT YOU HAVE TO CHOSE FROM ABOVE MENTIONED",0.01)
+    style("PLEASE DON'T WASTE MY TIME,CAN'T YOU READ THAT YOU HAVE TO CHOSE FROM ABOVE MENTIONED",0.01) 
