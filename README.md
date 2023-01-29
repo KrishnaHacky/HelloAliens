@@ -1,2 +1,3 @@
-# it is just my general purpose repository
-# i just write codes and upload them here
+# nothing special
+
+this repo is just pure nostalgia for me , that why i'm not going to delete it anyway...
